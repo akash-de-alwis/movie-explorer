@@ -6,7 +6,7 @@ function search() {
 
     let htmlRequest = new XMLHttpRequest();
 
-    let url = "http://www.omdbapi.com/?apikey=f61442c3&t=" + movieName;
+    let url = "https://www.omdbapi.com/?apikey=f61442c3&t=" + movieName;
 
     htmlRequest.open("GET", url);
 
