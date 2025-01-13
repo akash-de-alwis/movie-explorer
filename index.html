@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Movie Explorer</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-film"></i>
+            <span>Cineverse</span>
+        </div>
+    </nav>
+    
+    <main class="container">
+        <div class="hero-section">
+            <h1 class="hero-title">Discover Your Next Favorite Movie</h1>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search search-icon"></i>
+                    <input id="input" placeholder="Type a movie title..." />
+                    <button onclick="search()">
+                        Explore
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+                <div class="search-backdrop"></div>
+            </div>
+        </div>
+
+        <div class="movie-content">
+            <div class="movie-poster">
+                <img id="poster" />
+            </div>
+            
+            <div class="movie-details">
+                <div class="movie-header">
+                    <h1 id="title">Search for a movie to begin</h1>
+                    <div class="movie-meta">
+                        <span id="year" class="tag"></span>
+                        <span id="lang" class="tag"></span>
+                        <span id="genre" class="tag"></span>
+                        <span id="rating" class="tag rating-tag">
+                            <i class="fas fa-star"></i>
+                            <span id="imdbRating"></span>
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <i class="fas fa-calendar"></i>
+                        <span id="released"></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span id="boxOffice"></span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-users"></i>
+                        <span id="actors"></span>
+                    </div>
+                </div>
+                
+                <div class="plot-section">
+                    <h2>Plot Summary</h2>
+                    <p id="plot"></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
